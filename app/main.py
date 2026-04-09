@@ -21,7 +21,7 @@ class CarWashStation:
         for car in cars:
             if self.clean_power > car.clean_mark:
                 total_income += self.calculate_washing_price(car)
-                self.wash_single_car(car)  # Вызываем метод мойки
+                self.wash_single_car(car)
         return round(total_income, 1)
 
     def rate_service(self, new_rating):
